@@ -14,7 +14,7 @@ const EditForm = () => {
         let r = await fetch(`/api/chirps/${id}`);
         let chirp = await r.json();
         setImage(chirp.image)
-        setUser(chirp.username);
+        setUser(chirp.name);
         setChirpText(chirp.chirpText)
     }
 
@@ -22,9 +22,9 @@ const EditForm = () => {
 
     async function submit(e: { preventDefault: () => void; }) {
         e.preventDefault();
-        let newChirp: {image: string, username: string, chirpText: string} = {
+        let newChirp: {image: string, name: string, chirpText: string} = {
             image: image,
-            username: user,
+            name: user,
             chirpText: chirpText,
         }
 

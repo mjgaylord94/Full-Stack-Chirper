@@ -36,11 +36,3 @@ INSERT INTO chirps (userid, chirpText) VALUES
 (5, "Cut off a wolf's head and it still has the power to bite."),
 (6, "Oh, Haku's bleeding all over the carpet."),
 (7, "Yes, I'm the scariest witch of them all—the kind that cleans!");
-
-SELECT
-	u.image,
-	u.name,
-    c.chirpText
-FROM chirps c
-JOIN users u on
-	c.userid = u.id

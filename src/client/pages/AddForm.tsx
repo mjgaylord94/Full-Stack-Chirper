@@ -11,9 +11,9 @@ const AddForm = () => {
 
     function submit(e: { preventDefault: () => void; }) {
         e.preventDefault();
-        let newChirp: {image: string, username: string, chirpText: string} = {
+        let newChirp: {image: string, name: string, chirpText: string} = {
             image: "https://merriam-webster.com/assets/mw/images/article/art-wap-article-main/egg-3442-e1f6463624338504cd021bf23aef8441@1x.jpg",
-            username: user,
+            name: user,
             chirpText: chirpText,
         }
 
